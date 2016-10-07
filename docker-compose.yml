@@ -1,10 +1,2 @@
 hystrixDashboard:
   image: docker.repo.leeln.com/leeln/hystrix-dashboard
-LB-hystrixDashboard:
-  ports:
-  - 80:8080
-  tty: true
-  image: rancher/load-balancer-service
-  links:
-  - hystrixDashboard:hystrixDashboard
-  stdin_open: true
